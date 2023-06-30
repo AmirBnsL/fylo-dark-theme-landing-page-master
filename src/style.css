@@ -72,7 +72,7 @@ body {
 }
 .hero-button {
   @include button-style;
-  width: 10%;
+  width: 20%;
   margin-top: 2rem;
 }
 .hero-title {
@@ -160,7 +160,9 @@ body {
   text-align: center;
   font-size: 1.6rem;
 }
-
+.productivity-img {
+    width: 50%;
+}
 .productivity {
   display: flex;
   align-items: center;
@@ -274,7 +276,7 @@ body {
 }
 .sign-up-form {
   display: flex;
-  width: 80%;
+  width: 100%;
   gap: 3rem;
 }
 #email {
@@ -301,7 +303,7 @@ body {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   align-content: center;
   column-gap: 2.4rem;
 }
@@ -351,16 +353,29 @@ body {
     align-items: start;
     gap: 1rem;
   }
-  > i {
-    height: 32px;
-    width: 32px;
-    border: 2px solid white;
-    padding: 1rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  > a {
+    &,&:visited,&:link {
+        text-decoration: none;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        border: 2px solid white;
+        padding: 1rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+    }
+    &:hover,&:active {
+        color:$callta-gradient1;
+        border-color: $callta-gradient1;
+    }
   }
+}
+.icon-link {
+   
 }
 @media (width<600px) {
     .nav-links {

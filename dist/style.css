@@ -61,7 +61,7 @@ body {
     background-color: hsl(176, 68%, 64%);
   }
 .hero-button {
-  width: 10%;
+  width: 20%;
   margin-top: 2rem;
 }
 .hero-title {
@@ -148,6 +148,9 @@ body {
   font-family: "raleway";
   text-align: center;
   font-size: 1.6rem;
+}
+.productivity-img {
+    width: 50%;
 }
 .productivity {
   display: flex;
@@ -271,7 +274,7 @@ body {
 }
 .sign-up-form {
   display: flex;
-  width: 80%;
+  width: 100%;
   grid-gap: 3rem;
   gap: 3rem;
 }
@@ -322,7 +325,7 @@ body {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   align-content: center;
   grid-column-gap: 2.4rem;
   -moz-column-gap: 2.4rem;
@@ -377,16 +380,28 @@ body {
     grid-gap: 1rem;
     gap: 1rem;
   }
-.social-media > i {
-    height: 32px;
-    width: 32px;
-    border: 2px solid white;
-    padding: 1rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.social-media > a,.social-media > a:visited,.social-media > a:link {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        border: 2px solid white;
+        padding: 1rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+    }
+.social-media > a:hover,.social-media > a:active {
+        color:hsl(176, 68%, 64%);
+        border-color: hsl(176, 68%, 64%);
+    }
+.icon-link {
+   
+}
 @media (max-width: 599px) {
     .nav-links {
         justify-content: space-between;
